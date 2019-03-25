@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  eshoplegacywebforms:
+    build:
+      context: ./src/eShopLegacyWebForms
+      dockerfile: Dockerfile
+    ports:
+      - "80"
+#networks:
+#  default:
+#    external:
+#      name: nat
